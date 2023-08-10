@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Reviews</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/CSS" />
+</head>
+<body>
+    <h1>Rummikub</h1>
+    <ul class="tabs">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./info.html">The Game</a></li>
+        <li><a href="./reviews.html">Reviews</a></li>
+        <li><a href="./about.html">About</a></li>
+    </ul>
+
+    <div class="cardContainer" id="cardContainer">
+    <!-- dynamically create cards here -->
+    <!-- <div class="card">
+            <h3> *** title </h3> 
+            <img src="5star">
+            <div> name </div> 
+            <date> 2023-08-08 </date>
+            <span> 3 </span>
+            <p> This game is fun. </p> 
+      </div> -->
+    </div>
+
+    <form class="commentSection" id="commentSection">
+        <h3>Leave a comment:</h3>   
+        <table>
+            <tr>
+            <td>
+                <label for="card_title">Title : </label>
+            </td>
+            <td>
+            <input type="text" id="card_title" name="card_title" required>
+        </td>    
+        </tr>
+            <!-- <br> -->
+        <tr>   
+        <td>
+            <label for="card_name">Your Name:</label>
+        </td>
+        <td>
+            <input type="text" id="card_name" name="card_name" required>
+        </td>
+        </tr>
+        <tr>
+        <td> 
+            <!-- <br> -->
+            <label for="card_rating">Rating :</label>
+        </td>
+        <td>
+            <select id="card_rating" name="card_rating">
+                <option value="default">--select rating--</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </select>
+        </td>
+        </tr>
+        </table>
+            <!-- <br> -->
+ 
+            <textarea class="card_content" id="card_content" name="card_content" placeholder="what do you think?"></textarea>
+            <br>
+            <input type="submit" id="submitComment" name="submitComment" value="Create"></input>
+
+            <!-- <button type="submit" id="submitComment" name="submitComment" onclick="onCreateButtonClick()">Create</button> -->
+    </form>
+        
+
+    
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+</html>

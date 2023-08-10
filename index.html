@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles.css" type="text/CSS" />
+</head>
+<body>
+    <!-- 
+    This page should give a short description of the game, include
+    
+    1. some media (e.g., images, videos, YouTube embed iframes) about the game, 
+    2. and provide details
+    3. and links to other parts of the site
+    -->
+    <div class="heading">
+    <h1>Rummikub </h1> 
+    </div>
+
+    <ul class="tabs">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./info.html">The Game</a></li>
+        <li><a href="./reviews.html">Reviews</a></li>
+        <li><a href="./about.html">About</a></li>
+    </ul>
+    
+    <section class="color-section-1 "> 
+    <img width="320px" src="https://dragonsdengames.com/wp-content/uploads/2021/02/rummikub.jpg">
+    <p>
+        Created in 1978, Rummikub (pronounced “rummy-cube”) is definitely one of the most fun board games for families. Players take turns placing numbered tiles in sequential runs and groups of the same. Jokers add spice and interest, and the first player to use all their tiles wins. The game is simple enough for kids to get but engaging enough for adults.
+    </p>
+    </section>
+    <br>
+
+    <!-- 
+    At the bottom of the page, include an HTML Form for the user to enter their email address and join the
+    site’s Newsletter.     
+    -->
+    <section class="color-section-4"> 
+        <h3>Join Our Newsletter</h3>
+        <form id="newsletterForm" action="https://httpbin.org/post" method="POST">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="a@b.com" required>        
+            <input type="hidden" id="name" name="name" value="Alex">        
+            <input type="submit" id="join" name="join" value="Join">
+            <!-- <button type="submit" id="join">Join</button> -->
+    </form> 
+    </section>
+    <!-- <script>
+        const form = document.getElementById("newsletterForm");
+        const emailInput = document.getElementById("email");
+        const joinButton = document.getElementById("join");
+
+        form.addEventListener("submit", function(event) {
+            if (!emailInput.checkValidity()) {
+                // alert("Please enter a valid email address.");
+                event.preventDefault();
+            }
+        });
+    </script> -->
+
+
+</body>
+</html>
